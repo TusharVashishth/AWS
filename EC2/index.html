@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS EC2 - Elastic Compute Cloud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <svg class="aws-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 8L12 4L18 8V16L12 20L6 16V8Z" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span>AWS EC2</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#instances">Instances</a></li>
+                <li><a href="#contact" class="btn-primary">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Amazon EC2</span><br>
+                    Secure & Resizable Cloud Computing
+                </h1>
+                <p class="hero-subtitle">
+                    Launch virtual servers in minutes. Scale up or down automatically. Pay only for what you use.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Start Free Trial</button>
+                    <button class="btn btn-secondary">Watch Demo</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Instance Types</p>
+                    </div>
+                    <div class="stat">
+                        <h3>99.99%</h3>
+                        <p>SLA Uptime</p>
+                    </div>
+                    <div class="stat">
+                        <h3>30+</h3>
+                        <p>Global Regions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">🚀</div>
+                    <h4>Fast Launch</h4>
+                    <p>Deploy in seconds</p>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">💰</div>
+                    <h4>Cost Effective</h4>
+                    <p>Pay as you go</p>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">🔒</div>
+                    <h4>Secure</h4>
+                    <p>Enterprise grade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to run applications in the cloud</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Elastic Computing</h3>
+                    <p>Scale compute capacity up or down automatically based on demand with Amazon EC2 Auto Scaling.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Complete Control</h3>
+                    <p>Full root access to each instance and the ability to interact with them as you would any machine.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Global Infrastructure</h3>
+                    <p>Deploy across multiple AWS Regions and Availability Zones for high availability and fault
+                        tolerance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Flexible Storage</h3>
+                    <p>Choose from multiple storage options including EBS volumes and instance store for optimal
+                        performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Enhanced Security</h3>
+                    <p>Built-in firewall with security groups and network ACLs to control inbound and outbound traffic.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Monitoring & Insights</h3>
+                    <p>Amazon CloudWatch provides monitoring and management of your EC2 instances in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Why Choose EC2?</h2>
+                    <div class="benefit-item">
+                        <div class="benefit-number">01</div>
+                        <div class="benefit-info">
+                            <h3>Reliability</h3>
+                            <p>99.99% SLA with proven track record of reliability and performance across millions of
+                                instances.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">02</div>
+                        <div class="benefit-info">
+                            <h3>Flexibility</h3>
+                            <p>Choose from multiple instance types, operating systems, and software packages to match
+                                your needs.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">03</div>
+                        <div class="benefit-info">
+                            <h3>Cost Optimization</h3>
+                            <p>Multiple pricing models including On-Demand, Reserved, and Spot instances to minimize
+                                costs.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">04</div>
+                        <div class="benefit-info">
+                            <h3>Integration</h3>
+                            <p>Seamlessly integrates with other AWS services like S3, RDS, Lambda, and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual">
+                    <div class="circle-chart">
+                        <svg viewBox="0 0 200 200">
+                            <circle cx="100" cy="100" r="80" class="circle-bg" />
+                            <circle cx="100" cy="100" r="80" class="circle-progress" />
+                        </svg>
+                        <div class="chart-text">
+                            <h3>99.99%</h3>
+                            <p>Uptime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instance Types Section -->
+    <section id="instances" class="instances">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Instance Types</h2>
+                <p>Choose the right instance for your workload</p>
+            </div>
+            <div class="instances-grid">
+                <div class="instance-card">
+                    <div class="instance-header">
+                        <h3>T3</h3>
+                        <span class="instance-badge">General Purpose</span>
+                    </div>
+                    <p class="instance-desc">Burstable performance instances for workloads with variable CPU usage</p>
+                    <ul class="instance-specs">
+                        <li>✓ Cost-effective</li>
+                        <li>✓ Baseline CPU performance</li>
+                        <li>✓ Burst capability</li>
+                        <li>✓ Web servers & dev environments</li>
+                    </ul>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                <div class="instance-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="instance-header">
+                        <h3>M5</h3>
+                        <span class="instance-badge">General Purpose</span>
+                    </div>
+                    <p class="instance-desc">Balance of compute, memory, and networking for diverse workloads</p>
+                    <ul class="instance-specs">
+                        <li>✓ Latest Intel processors</li>
+                        <li>✓ Up to 25 Gbps networking</li>
+                        <li>✓ EBS-optimized</li>
+                        <li>✓ Enterprise applications</li>
+                    </ul>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+                <div class="instance-card">
+                    <div class="instance-header">
+                        <h3>C5</h3>
+                        <span class="instance-badge">Compute Optimized</span>
+                    </div>
+                    <p class="instance-desc">Ideal for compute-intensive applications requiring high performance</p>
+                    <ul class="instance-specs">
+                        <li>✓ High-performance processors</li>
+                        <li>✓ 3.6 GHz sustained clock</li>
+                        <li>✓ AVX-512 instructions</li>
+                        <li>✓ HPC & batch processing</li>
+                    </ul>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                <div class="instance-card">
+                    <div class="instance-header">
+                        <h3>R5</h3>
+                        <span class="instance-badge">Memory Optimized</span>
+                    </div>
+                    <p class="instance-desc">Memory-intensive applications and in-memory databases</p>
+                    <ul class="instance-specs">
+                        <li>✓ High memory to vCPU ratio</li>
+                        <li>✓ DDR4 memory</li>
+                        <li>✓ Up to 768 GiB RAM</li>
+                        <li>✓ Databases & caching</li>
+                    </ul>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Flexible Pricing Models</h2>
+                <p>Pay only for what you use with no upfront costs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>On-Demand</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">0.0116</span>
+                        <span class="period">/hour</span>
+                    </div>
+                    <p class="pricing-desc">Pay for compute capacity by the hour with no long-term commitments</p>
+                    <ul class="pricing-features">
+                        <li>✓ No upfront payment</li>
+                        <li>✓ No long-term commitment</li>
+                        <li>✓ Scale up or down</li>
+                        <li>✓ Perfect for unpredictable workloads</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Reserved Instances</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">0.0069</span>
+                        <span class="period">/hour</span>
+                    </div>
+                    <p class="pricing-desc">Up to 72% savings with 1 or 3-year commitment</p>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 72% discount</li>
+                        <li>✓ 1 or 3-year terms</li>
+                        <li>✓ Capacity reservation</li>
+                        <li>✓ Steady-state workloads</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Spot Instances</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">0.0035</span>
+                        <span class="period">/hour</span>
+                    </div>
+                    <p class="pricing-desc">Up to 90% savings for fault-tolerant applications</p>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 90% discount</li>
+                        <li>✓ Unused EC2 capacity</li>
+                        <li>✓ Flexible start/stop times</li>
+                        <li>✓ Batch jobs & data analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started with EC2?</h2>
+                <p>Launch your first instance today and experience the power of cloud computing</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large">Start Free Trial</button>
+                    <button class="btn btn-secondary btn-large">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AWS EC2</h4>
+                    <p>Elastic Compute Cloud - Secure and resizable compute capacity in the cloud.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community Forums</a></li>
+                        <li><a href="#">AWS Support</a></li>
+                        <li><a href="#">Service Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About AWS</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amazon Web Services, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
